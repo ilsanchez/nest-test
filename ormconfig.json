@@ -1,0 +1,13 @@
+{
+  "type": "sqlite",
+  "database": "db.db",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "migrationsTableName": "custom_migration_table",
+  "migrations": ["dist/migration/*.js"],
+  "cli": {
+      "migrationsDir": "migration"
+  },
+  "sinchronize": true,
+  "keepConnectionAlive": true,
+  "logging": true
+}
